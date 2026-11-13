@@ -1,8 +1,8 @@
-package com.example.roomdb
+package com.example.prakdatabase
 
 import android.app.Application
-import com.example.roomdb.repositori.ContainerApp
-import com.example.roomdb.repositori.ContainerDataApp
+import com.example.prakdatabase.repositori.ContainerApp
+import com.example.prakdatabase.repositori.ContainerDataApp
 
 class AplikasiSiswa : Application() {
     lateinit var container: ContainerApp

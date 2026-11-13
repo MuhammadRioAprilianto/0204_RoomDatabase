@@ -1,4 +1,4 @@
-package com.example.roomdb.view
+package com.example.prakdatabase.view
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -23,19 +23,14 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.roomdb.R
-import com.example.roomdb.uicontroller.DestinasiNavigasi
-import com.example.roomdb.uicontroller.SiswaTopAppBar
-import com.example.roomdb.viewmodel.DetailSiswa
-import com.example.roomdb.viewmodel.EntryViewModel
-import com.example.roomdb.viewmodel.PenyediaViewModel
-import com.example.roomdb.viewmodel.UIStateSiswa
+import com.example.prakdatabase.R
+import com.example.prakdatabase.uicontroller.DestinasiEntry
+import com.example.prakdatabase.uicontroller.SiswaTopAppBar
+import com.example.prakdatabase.viewmodel.DetailSiswa
+import com.example.prakdatabase.viewmodel.EntryViewModel
+import com.example.prakdatabase.viewmodel.PenyediaViewModel
+import com.example.prakdatabase.viewmodel.UIStateSiswa
 import kotlinx.coroutines.launch
-
-object DestinasiEntry : DestinasiNavigasi {
-    override val route = "entry"
-    override val titleRes = R.string.entry_siswa
-}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

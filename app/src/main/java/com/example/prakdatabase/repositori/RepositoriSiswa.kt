@@ -1,7 +1,7 @@
-package com.example.roomdb.repositori
+package com.example.prakdatabase.repositori
 
-import com.example.roomdb.room.Siswa
-import com.example.roomdb.room.SiswaDao
+import com.example.prakdatabase.room.Siswa
+import com.example.prakdatabase.room.SiswaDao
 import kotlinx.coroutines.flow.Flow
 
 interface RepositoriSiswa {

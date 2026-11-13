@@ -1,10 +1,10 @@
-package com.example.roomdb.viewmodel
+package com.example.prakdatabase.viewmodel
 
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import com.example.roomdb.AplikasiSiswa
+import com.example.prakdatabase.AplikasiSiswa
 
 object PenyediaViewModel {
     val Factory = viewModelFactory {

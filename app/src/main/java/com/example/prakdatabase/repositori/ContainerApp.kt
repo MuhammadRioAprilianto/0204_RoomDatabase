@@ -1,7 +1,7 @@
 package com.example.prakdatabase.repositori
 
 import android.content.Context
-import com.example.roomdb.room.DatabaseSiswa
+import com.example.prakdatabase.room.DatabaseSiswa
 
 interface ContainerApp {
     val repositoriSiswa: RepositoriSiswa

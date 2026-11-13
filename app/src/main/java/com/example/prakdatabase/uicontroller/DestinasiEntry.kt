@@ -1,6 +1,6 @@
 package com.example.prakdatabase.uicontroller
 
-import com.example.roomdb.R
+import com.example.prakdatabase.R
 
 object DestinasiEntry : DestinasiNavigasi {
     override val route = "item_entry"

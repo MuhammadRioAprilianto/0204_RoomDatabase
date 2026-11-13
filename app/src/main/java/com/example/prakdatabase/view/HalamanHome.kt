@@ -1,4 +1,4 @@
-package com.example.roomdb.view
+package com.example.prakdatabase.view
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -32,17 +32,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.roomdb.R
-import com.example.roomdb.room.Siswa
-import com.example.roomdb.uicontroller.DestinasiNavigasi
-import com.example.roomdb.uicontroller.SiswaTopAppBar
-import com.example.roomdb.viewmodel.HomeViewModel
-import com.example.roomdb.viewmodel.PenyediaViewModel
-
-object DestinasiHome : DestinasiNavigasi {
-    override val route = "home"
-    override val titleRes = R.string.app_name
-}
+import com.example.prakdatabase.R
+import com.example.prakdatabase.room.Siswa
+import com.example.prakdatabase.uicontroller.DestinasiHome
+import com.example.prakdatabase.uicontroller.SiswaTopAppBar
+import com.example.prakdatabase.viewmodel.HomeViewModel
+import com.example.prakdatabase.viewmodel.PenyediaViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
