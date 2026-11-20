@@ -15,7 +15,7 @@ interface SiswaDao {
 
     // Menambahkan method untuk update dan detele
     @Query(value = "SELECT * from tblSiswa WHERE id = :id")
-    fun getSiswa(id: int): Flow<Siswa>
+    fun getSiswa(id: Int): Flow<Siswa>
 
     @Delete
     suspend fun delete(siswa: Siswa)
