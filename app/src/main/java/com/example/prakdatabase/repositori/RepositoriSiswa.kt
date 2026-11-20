@@ -9,6 +9,10 @@ interface RepositoriSiswa {
     suspend fun insertSiswa(siswa: Siswa)
     //Menambahkan function getSiswaStream
     fun getSiswaStream(id: Int) Flow<Siswa?>
+
+    suspend fun deleteSiswa(siswa: Siswa)
+
+
 }
 
 class OfflineRepositoriSiswa(private val siswaDao: SiswaDao) : RepositoriSiswa {
