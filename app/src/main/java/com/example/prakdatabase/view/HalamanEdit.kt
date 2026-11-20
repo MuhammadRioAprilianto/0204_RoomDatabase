@@ -10,6 +10,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.prakdatabase.uicontroller.SiswaTopAppBar
 import com.example.prakdatabase.view.route.DestinasiEditSiswa
+import com.example.prakdatabase.viewmodel.EditViewModel
 import com.example.prakdatabase.viewmodel.PenyediaViewModel
 import kotlinx.coroutines.launch
 
@@ -33,7 +34,7 @@ fun EditSiswaScreen(
     ) { innerPadding ->
         val coroutineScope = rememberCoroutineScope()
         EntrySiswaBody(
-            uiStateSiswa = viewModel.uiStateSiwa,
+            uiStateSiswa = viewModel.uiStateSiswa,
             onSiswaValueChange = viewModel::updateUiState,
             onSaveClick = {
                 coroutineScope.launch {
