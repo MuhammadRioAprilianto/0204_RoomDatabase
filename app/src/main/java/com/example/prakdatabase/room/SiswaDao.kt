@@ -13,8 +13,11 @@ interface SiswaDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(siswa: Siswa)
 
-    // Menambahkan method untuk update dan detele
-    @Query(value = "SELECT * from tblSiswa WHERE id = :id")
+    @Query("SELECT * from tblSiswa ORDER BY nama ASC")
+    fun getAllSiswa(): Flow<List<Siswa>>
+
+    // Menambahkan method untuk update dan delete
+    @Query("SELECT * from tblSiswa WHERE id = :id")
     fun getSiswa(id: Int): Flow<Siswa>
 
     @Delete
@@ -23,6 +26,4 @@ interface SiswaDao {
     @Update
     suspend fun update(siswa: Siswa)
 
-    @Query(value="SELECT * from tblSiswa ORDER BY nama ASC")
-    fun getAllSiswa(): Flow<List<Siswa>>
 }
